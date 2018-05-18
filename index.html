@@ -1,0 +1,1230 @@
+<!doctype html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <title>Jumbotron Template for Bootstrap</title>
+    <link rel="canonical" href="https://uncompiled.github.io/amp-bootstrap/"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <meta name="description" content="Sample Bootstrap Site">
+    <meta name="author" content="Web Developer">
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CMontserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CLato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CQuicksand:regular,500%7CQuicksand:300,regular,500,700&amp;subset=latin-ext,latin,latin,latin-ext">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- AMP boilerplate -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <!-- Bootstrap core CSS is replaced with amp-custom style tag -->
+    <style amp-custom>/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+    html {
+        font-family: sans-serif;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%
+    }
+
+    details, footer, header, main, nav {
+        display: block
+    }
+
+    [hidden], template {
+        display: none
+    }
+    a{
+        text-decoration: none;
+    }
+    a:active, a:hover {
+        outline: 0
+    }
+
+    h1 {
+        margin: .67em 0
+    }
+
+    hr {
+        height: 0;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #eee
+    }
+
+    button {
+        margin: 0;
+        font: inherit;
+        color: inherit;
+        overflow: visible;
+        text-transform: none;
+        -webkit-appearance: button;
+        cursor: pointer
+    }
+
+    button[disabled] {
+        cursor: default
+    }
+
+    .btn, [role=button] {
+        cursor: pointer
+    }
+
+    button::-moz-focus-inner {
+        padding: 0;
+        border: 0
+    }
+    h1, h2, h3, h4, h5, h6, ol, p, ul {
+        margin-bottom: 10px;
+    }
+    .h4, h4 {
+        font-size: 18px;
+    }
+    .h4, .h5, .h6, h4, h5, h6 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .container-menu{
+        position: fixed;
+        height: 60px;
+        z-index: 900;
+        background-color: #fff;
+        box-shadow: 1px 1px 3px 0 #ddd;
+        width:100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-fixed-top {
+        height: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #navbar-toggle-cbox {
+        display: block;
+        opacity: 0;
+        height:0;
+    }
+    .navbar-toggle{
+        float: right;
+        padding: 18px;
+        display: block;
+        font-weight: 400;
+         display: block;
+        cursor: pointer;
+    }
+
+    #navbar-toggle-cbox:checked ~ .collapse {
+        display: block;
+    }
+    #navbar-toggle-cbox:checked ~ .navbar-toggle {
+        background-color: #0084ff;
+    }
+
+    .container-menu .navbar {
+        background-color: #fff;
+        box-shadow: 1px 1px 3px 0 #ddd;
+        border-color: transparent;
+        height: 60px;
+    }
+
+    .container-menu.horizontal-menu amp-img {
+        height: 50px;
+        width: 117px;
+        display: flex;
+        padding-left: 15px;
+        align-items: center;
+    }
+
+    .container-menu {
+    }
+
+    .container-menu .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 940px;
+    }
+    #navbar {
+        display: none;
+    }
+    #navbar ul{
+        margin: 0;
+        padding: 0;
+        transition:height 2s;
+        -moz-transition:height 2s; /* Firefox 4 */
+        -webkit-transition:height 2s; /* Safari and Chrome */
+        -o-transition:height 2s; /* Opera */
+    }
+    #navbar ul {
+        background-color: #fff;
+    }
+    label.expanded {
+
+    }
+    #navbar ul li {
+        width: 100%;
+        padding: 20px;
+        font-size: 18px;
+        font-family: Roboto;
+        text-align: center;
+        list-style: none;
+
+    }
+    #navbar ul li a {
+        text-decoration: none;
+
+    }
+    .navbar-link {
+        width:100%;
+        color: #404040;
+        text-decoration: none;
+    }
+    .navbar-link.phone {
+            left: 161px;
+            float: right;
+            position: absolute;
+            top:13px;
+            display: block;
+            width: auto;
+            height: auto;
+            margin-left: 5px;
+           padding: 10px 11px;
+            border-radius: 30px;
+            background-color: #f60;
+            -webkit-transition: box-shadow .2s ease;
+            transition: box-shadow .2s ease;
+            color: #fff;
+            cursor: pointer;
+            padding-left: 10px;
+            font-size: 16px;
+            font-family: Lato,sans-serif;
+            padding-right: 10px;
+        }
+
+        /*start hero section*/
+        .hero-section {
+            position: relative;
+            height: 450px;
+            padding-top: 60px;
+            padding-bottom: 0;
+            display: flex;
+            -webkit-box-align: stretch;
+            -webkit-align-items: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(assets/images/clouds-colors-desert-979599-min.jpg);
+            background-position: -68px -157px;
+            background-size: 245%;
+            background-repeat: no-repeat;
+        }
+        .hero-section .hero_right-side-2{
+            margin-top: 60px;
+        }
+    .hero-section .h1-hero {
+        margin-bottom: 30px;
+        margin-top: 18vh;
+        padding-bottom: 31px;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        font-family: Quicksand, sans-serif;
+        color: #fff;
+        font-weight: 700;
+        background-image: url(assets/images/bordered-bottom.png);
+        background-position: 100% 100%;
+        background-size: 90%;
+        background-repeat: no-repeat;
+    }
+    .hero-section .hero-button{
+            font-size: 18px;
+            line-height: 24px;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px 60px;
+            background-color: #f60;
+            box-shadow: 1px 1px 20px 1px rgba(0,0,0,.5);
+            font-weight: 500;
+            text-transform: capitalize;
+            font-family: Quicksand,sans-serif;
+            color: #fff;
+            border: 0;
+            text-decoration: none;
+            cursor: pointer;
+            width: max-content;
+            margin: auto;
+        }
+    .programs-section {
+
+        }
+    h1.h1{
+        font-family: Quicksand,sans-serif;
+        color: #0084ff;
+        text-align: center;
+        /**
+        resposive part
+        **/
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 400;
+        }
+    .programs-section .section-subheading{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-family: Quicksand,sans-serif;
+        color: rgba(0,0,0,.7);
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: center;
+        }
+    .programs-section amp-img{
+        display: block;
+        width: 110px;
+        height: 110px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    .programs-section li {
+        list-style: none;
+        margin-bottom: 30px;
+    }
+    .programs-section .text-block {
+        color: #404040;
+        font-size: 17px;
+        font-weight: 700;
+        margin-top: 20px;
+        font-family: Quicksand, sans-serif;
+        text-align: center;
+        display: block;
+    }
+    .call-section {
+        margin-top: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #146cb2;
+        box-shadow: 0 0 50px 3px rgba(0,0,0,.25);
+        box-sizing: border-box;
+    }
+    .call-heading {
+        width: 100%;
+        font-family: Quicksand,sans-serif;
+        color: #fff;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .call-subheading {
+        font-family: Quicksand,sans-serif;
+        color: #fff;
+    }
+    .call-content-box{
+        margin-top: 30px;
+    }
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*Layout*/
+    .cta-button{
+        padding-right: 60px;
+        padding-left: 60px;
+        background-position: 10px 50%;
+        background-size: 40px;
+    }
+    /*Text*/
+    .cta-button{
+        font-family: Quicksand,sans-serif;
+        color: #fff;
+    }
+
+    .call-content-box .cta-button {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px 60px;
+        border-radius: 10px;
+        background-color: #f60;
+        background-image: url(assets/images/phone1.svg);
+        background-position: 10px 50%;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        box-shadow: 1px 1px 20px 1px rgba(0,0,0,.5);
+        transition: box-shadow .2s ease,-webkit-transform .2s ease;
+        transition: box-shadow .2s ease,transform .2s ease;
+        transition: box-shadow .2s ease,transform .2s ease,-webkit-transform .2s ease;
+        font-size: 28px;
+        line-height: 28px;
+        font-weight: 700;
+        cursor: pointer;
+        width: 65%;
+        text-align: center;
+    }
+    /*section therapies*/
+        .therapies-section {
+            margin-right: 20px;
+            margin-left: 20px;
+            font-family: Quicksand,sans-serif;
+            color: #404040;
+        }
+        .therapy-box{
+            max-width: 400px;
+            padding-right: 0;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 7px 7px 25px 0 rgba(0,0,0,.2);
+            transition: transform .2s ease,box-shadow .2s ease,-webkit-transform .2s ease;
+        }
+        .img {
+            background-repeat: no-repeat;
+            ackground-position: 50% 50%;
+            background-size: cover;
+        }
+        .desc {
+            padding: 20px 20px 30px;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            text-align: center;
+            font-size: 17px;
+            line-height: 20px;
+        }
+        .heading {
+            justify-content: center;
+            line-height: 24px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .desc-text{
+
+        }
+    .therapies-container-cognitive .img {
+        height: 180px;
+        border-bottom: 1px solid rgba(0,0,0,.3);
+        }
+    .therapies-container-cognitive .therapy-img_1 {
+        background-image: url(assets/images/therapy-group-title-image_tcm7-162394.jpg);
+
+    }
+    .therapies-container-cognitive .therapy-img_2 {
+        background-image: url(assets/images/doctor-discussing-myeloma-treatment-drugs.jpg);
+        height: 180px;
+        border-bottom: 1px solid rgba(0,0,0,.3);
+    }
+    .therapies-container-cognitive .therapy-img_3 {
+        background-image: url(assets/images/12_steps.jpg);
+        height: 180px;
+        border-bottom: 1px solid rgba(0,0,0,.3);
+    }
+    .therapies-container-cognitive .therapy-img_4 {
+         background-image: url(assets/images/counseling.jpg);
+         height: 180px;
+         border-bottom: 1px solid rgba(0,0,0,.3);
+     }
+
+    .therapies-container-cognitive .therapy-img_5 {
+        background-image: url(assets/images/life_skills.jpg);
+        height: 180px;
+        border-bottom: 1px solid rgba(0,0,0,.3);
+    }
+        .stories-section{
+            padding-top: 40px;
+        }
+        .panel{
+            margin-bottom: 30px;
+            padding-right: 0;
+            padding-left: 0;
+            display: flex;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 7px 7px 30px 0 rgba(0,0,0,.2);
+            padding: 40px 30px;
+        }
+        .h5 {
+            font-family: Lato,sans-serif;
+            color: #0084ff;
+            font-weight: 700;
+            text-align: center;
+            font-style: italic;
+        }
+        .testimonial-text {
+            font-family: Lato,sans-serif;
+            font-size: 17px;
+            line-height: 24px;
+            font-style: italic;
+            text-align: center;
+            color: #404040;
+        }
+
+        .faq-section {
+            position: relative;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            font-family: Quicksand,sans-serif;
+            color: #404040;
+        }
+        .acco-container {
+            margin-right: -5px;
+            margin-left: -5px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    .acco-dropdown{
+        z-index: 20;
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
+    .acco-dropdown .dropdown-toggle {
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 40px;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        background-color: #f3f3f3;
+        background-image: -webkit-linear-gradient(270deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0)),-webkit-linear-gradient(270deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0));
+        background-image: linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0)),linear-gradient(180deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0));
+        -webkit-transition: background-color .2s ease,color .2s ease;
+        transition: background-color .2s ease,color .2s ease;
+        color: #0084ff;
+        font-size: 12px;
+        text-align: left;
+        cursor: pointer;
+
+    }
+        .acco-dropdown .icon-expand {
+            position: absolute;
+            top: 45px;
+            right: 0;
+            bottom: 0;
+            margin: auto 20px auto auto;
+            width: 1em;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #0084ff;
+            text-align: left;
+            cursor: pointer;
+        }
+        #acco-duration {
+           /* display: none;*/
+            opacity: 0;
+        }
+        .dropdown-toggle{
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .dropdown-list{
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-top: 10px;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            font-family: Lato,sans-serif;
+            color: #080808;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        .treatment-duraction .dropdown-list {
+            display: none;
+        }
+        #acco-duration:checked ~ .dropdown-list.duration {
+           display: block;
+        }
+        .faq-answer-text{
+            /*margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 14px*/
+        }
+        .faq-answer-text {
+            font-size: 12px;
+        }
+        .footer-text {
+            font-size: 16px;
+            line-height: 22px;
+            color: white;
+        }
+        .pop_up-section{
+            position: fixed;
+            top:0;
+            left: 0;
+
+        }
+    .first_step-bg {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-image: linear-gradient(180deg,#f60,#f60);
+        color: white;
+        font-family: Lato, sans-serif;
+    }
+    .pop_up-heading {
+        color: #fff;
+        font-size: 14px;
+        line-height: 42px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        text-transform: capitalize;
+    }
+    .pop_up-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 48px;
+        line-height: 25px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .pop_up-holder{
+        z-index: 9999;
+        height: 750px;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        left: 0;
+        top: 10px;
+        right: 0;
+        bottom: 10px;
+        display: block;
+        overflow: scroll;
+        max-width: 1000px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    .pop_up-list{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+        .list_text{
+            padding-left: 40px;
+            background-image: url(assets/images/checkmark.png);
+            background-position: 0 51%;
+            background-size: auto 30px;
+            background-repeat: no-repeat;
+            font-family: Quicksand,sans-serif;
+            color: #fff;
+            font-weight: 700;
+            font-size: 12px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            line-height: 18px;
+        }
+        .pop_up-one{
+            justify-content: center;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            margin-top: 50px;
+            align-items: stretch;
+            padding-left: 15px;
+            display: flex;
+            padding-right: 15px;
+        }
+        .pop_up-holder .a-button{
+            padding: 10px 15px;
+            font-size: 12px;
+            display: flex;
+            padding: 10px 30px;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border: 1px solid #0084ff;
+            border-radius: 10px;
+            background-color: #0084ff;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #fff;
+            line-height: 18px;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+            font-family: 'Open Sans',sans-serif;
+        }
+        .pop_up-holder i {
+            color: white;
+            font-size: 12px;
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+            margin-right: 10px;
+        }
+    .pop_up_or-section {
+        padding-top: 50px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 50px;
+        display: flex;
+        position: relative;
+    }
+    .pop_up-line {
+        position: relative;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+        background-color: #f60;
+    }
+        .pop_up-circle {
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            position: absolute;
+            display: -webkit-box;
+            display: flex;
+            width: 60px;
+            left: 40%;
+            height: 60px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #f60;
+        }
+    .pop_up_or-text {
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Open Sans',sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .pop_up-list, .pop_up-two {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .pop_up_text-field {
+        font-size: 14px;
+        margin-bottom: 15px;
+        padding: 12px;
+        border: 1px solid #f60;
+        border-radius: 10px;
+        color: #f60;
+        display: flex;
+        line-height: 1.42857143;
+
+        vertical-align: middle;
+        background-color: #fff;
+
+    }
+    .pop_up-form{
+        display: flex;
+        flex-direction: column;
+    }
+        .pop_up-btn {
+            border-color: #f60;
+            background-color: #f60;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 11px;
+            display: block;
+            color: #fff;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            border-radius: 10px;
+
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+            color: #fff;
+            line-height: 18px;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+            font-family: 'Open Sans',sans-serif;
+
+        }
+     .pop_up_two-text {
+        font-size: 12px;
+         padding-bottom: 15px;
+         color: #8c8c8c;
+         line-height: 32px;
+         font-style: italic;
+         text-align: center;
+         font-family: 'Open Sans',sans-serif;
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+          rel="stylesheet">
+</head>
+
+<body>
+<section class="container-menu horizontal-menu">
+    <nav class="navbar navbar-fixed-top">
+        <input type="checkbox" id="navbar-toggle-cbox">
+        <div class="navbar-header">
+            <label for="navbar-toggle-cbox" class="navbar-toggle collapsed" data-toggle="collapse"
+                   data-target="#navbar"
+                   aria-expanded="false"
+                   aria-controls="navbar">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a class="navbar-brand" href="#">
+                <amp-img src="assets/images/logo.png"
+                         width="117px"
+                         height="50px"
+                         layout="responsive"
+                         alt="AMP">
+
+                </amp-img>
+            </a>
+        </div>
+        <a class="navbar-link phone"  href="tel:+19543798066">
+            <!--<i class="fas fa-phone"></i>-->(954) 379-8066</a>
+        <nav id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="navbar-link" href="#">Programs</a></li>
+                <li><a class="navbar-link" href="#about">Therapies</a></li>
+                <li><a class="navbar-link" href="#about">Succes Stories</a></li>
+                <li><a class="navbar-link" href="#about">FAQs</a></li>
+
+            </ul>
+        </nav><!--/.navbar-collapse -->
+
+    </nav>
+</section>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero_right-side-2">
+            <div class="hero_text-holder">
+                <h1 class="h1-hero">Providing addiction recovery dedicated to long term success</h1>
+            </div>
+            <a href="#" class="hero-button" data-ix="popup" on="tap:modal">Get Help Now</a></div>
+
+    </div>
+</section>
+<section class="container programs-section">
+    <h1 class="h1">Proven Drug and Alcohol Detox and Treatment Centers</h1>
+    <div class="section-subheading">
+        We are a national provider of behavioral health services for adolescents and adults across the United States.
+        Our facilities are fully accredited by the Joint Commission and strive to provide the highest quality treatment
+        throughout the full continuum of care.
+    </div>
+    <ul>
+        <li>
+            <div class="treatment-block">
+                <div class="icon-block">
+                    <amp-img src="assets/images/service_detox.png"
+                             width="117px"
+                             height="50px"
+                             layout="responsive"
+                             alt="AMP">
+
+                    </amp-img>
+                </div>
+                <div class="text-block">Detox Programs</div>
+            </div>
+        </li>
+        <li>
+            <div class="treatment-block">
+                <div class="icon-block">
+                    <amp-img src="assets/images/service_residential_treatment.png"
+                             width="117px"
+                             height="50px"
+                             layout="responsive"
+                             alt="AMP">
+
+                    </amp-img>
+                </div>
+                <div class="text-block">Residencial Treatment</div>
+            </div>
+        </li>
+        <li>
+            <div class="treatment-block">
+                <div class="icon-block">
+                    <amp-img src="assets/images/service_intensive.png"
+                             width="117px"
+                             height="50px"
+                             layout="responsive"
+                             alt="AMP">
+
+
+                    </amp-img>
+                </div>
+                <div class="text-block">Intensive Outpatient Programs (IOP)</div>
+            </div>
+        </li>
+        <li>
+            <div class="treatment-block">
+                <div class="icon-block">
+                    <amp-img src="assets/images/service_partial_hospitalization.png"
+                             width="117px"
+                             height="50px"
+                             layout="responsive"
+                             alt="AMP">
+                    </amp-img>
+                </div>
+                <div class="text-block">Partial Hospitalization Programs (PHP)</div>
+            </div>
+        </li>
+        <li>
+            <div class="treatment-block">
+                <div class="icon-block">
+                    <amp-img src="assets/images/service_adolescent.png"
+                             width="117px"
+                             height="50px"
+                             layout="responsive"
+                             alt="AMP">
+
+                    </amp-img>
+                </div>
+                <div class="text-block">Adolescent Treatment</div>
+            </div>
+        </li>
+    </ul>
+</section>
+<section class="call-section">
+    <div class="container">
+        <div class="call-buttons-container">
+            <div class="call-content-box">
+                <h3 class="call-heading">Learn more about your treatment options.</h3>
+                <h4 class="call-subheading">
+                    Request a call for more information about how you can help yourself or a loved one.
+                </h4>
+            </div>
+            <div class="call-content-box button">
+                <a href="tel:+19543798066" class="cta-button">Call us now!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container therapies-section">
+    <h1 class="h1">
+        Therapies provided by compassionate and experienced specialists that will reinforce your path towards recovery
+    </h1>
+    <div class="therapies-container-cognitive">
+        <div class="box therapy-box">
+            <div class="card therapy-card">
+                <div class="img therapy-img_1"></div>
+                <div class="desc therapy-desc">
+                    <h4 class="heading therapy-heading">
+                        Cognitive and Dialectical Behavioral Therapies
+                    </h4>
+                    <div class="desc-text">
+                        These two therapy approaches are centered around allowing clients to explore the mental and emotional
+                        challenges which hinder the recovery process.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="therapies-container-cognitive">
+        <div class="box therapy-box">
+            <div class="card therapy-card">
+                <div class="img therapy-img_2"></div>
+                <div class="desc therapy-desc">
+                    <h4 class="heading therapy-heading">
+                        Experiential Therapy
+                    </h4>
+                    <div class="desc-text">
+                        This trauma-informed approach to group and individual therapy explores the traumatic events of one’s
+                        past which may contribute to ongoing substance abuse.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box therapy-box">
+            <div class="card therapy-card">
+                <div class="img therapy-img_3"></div>
+                <div class="desc therapy-desc">
+                    <h4 class="heading therapy-heading">
+                        12 Steps and Self-Help Groups
+                    </h4>
+                    <div class="desc-text">
+                        12 Steps and other self-help groups are designed to help maintain a focus on the recovery process and
+                        self-improvement.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box therapy-box">
+            <div class="card therapy-card">
+                <div class="img therapy-img_4"></div>
+                <div class="desc therapy-desc">
+                    <h4 class="heading therapy-heading">
+                        Family Counseling
+                    </h4>
+                    <div class="desc-text">
+                        Because addiction is a disease which impacts all areas of one’s life, repairing bonds and relationships
+                        among family members and loved ones is an important step in the recovery process.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box therapy-box">
+            <div class="card therapy-card">
+                <div class="img therapy-img_5"></div>
+                <div class="desc therapy-desc">
+                    <h4 class="heading therapy-heading">
+                        Life Skills Training
+                    </h4>
+                    <div class="desc-text">
+                        All Niznik Behavioral Health facilities provide actionable life skills training such as basic cleanliness
+                        and hygiene, communication skills, and mindfulness.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="call-section">
+    <div class="container">
+        <div class="call-buttons-container">
+            <div class="call-content-box">
+                <h3 class="call-heading">Learn more about your treatment options.</h3>
+                <h4 class="call-subheading">
+                    Request a call for more information about how you can help yourself or a loved one.
+                </h4>
+            </div>
+            <div class="call-content-box button">
+                <a href="tel:+19543798066" class="cta-button">Call us now!</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container stories-section">
+    <h1 class="h1">Success and recovery stories from some of our clients, and their new found outlook on life</h1>
+    <div class="stories row">
+        <div class="column panel">
+            <div class="rcenters-testimonials-block">
+                <div class="rcenters-testimonials-client-block">
+                    <h5 class="testimonial-name h5">Robert F.</h5>
+                    <h5 class="testimonial-client-text h5">Harbor Village Alumni</h5>
+                </div>
+                <div class="testimonial-text">“Great stay! I learned so much about myself. There were good days and
+                     bad days, Ups and downs. But i needed to go through it to really allow myself the time to heal. All in all,
+                    They really helped me focus on the real issues I was suffering from as well as my disease...”
+                </div>
+            </div>
+        </div>
+        <div class="column panel">
+            <div class="rcenters-testimonials-block">
+                <div class="rcenters-testimonials-client-block">
+                    <h5 class="testimonial-name h5">Scott, Father of Alumni</h5>
+                    <h5 class="testimonial-client-text h5">Safe Landing Alumni</h5>
+                </div>
+                <div class="testimonial-text">“Gre“My daughter had a very comfortable stay during her inpatient treatment at
+                    this facility. I loved that they were really involved from the moment I called them to the moment she left
+                    the facility. I am so thankful that such a place like this exists in this world. thank you all so much.”
+                </div>
+            </div>
+        </div>
+        <div class="column panel">
+            <div class="rcenters-testimonials-block">
+                <div class="rcenters-testimonials-client-block">
+                    <h5 class="testimonial-name h5">Allison F.</h5>
+                    <h5 class="testimonial-client-text h5">Harbor Village Alumni</h5>
+                </div>
+                <div class="testimonial-text">“I was at harbor village a couple of months ago, I just returned home about 3
+                    weeks ago. Harbor village is a great place to go if you are seeking help with drugs or alcohol, the staff is
+                    absolutely amazing and they really do care... ”
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="call-section">
+    <div class="container">
+        <div class="call-buttons-container">
+            <div class="call-content-box">
+                <h3 class="call-heading">Don’t let another day pass you by.</h3>
+                <h4 class="call-subheading">
+                    Are you ready to make a change? Get started!
+                </h4>
+            </div>
+            <div class="call-content-box button">
+                <a href="tel:+19543798066" class="cta-button">Call us now!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section container">
+    <h1 class="h1">Frequently Asked Questions</h1>
+    <div class="acco-container">
+        <div class="treatment-duraction acco-dropdown">
+            <input type="checkbox" id="acco-duration">
+            <div class="dropdown-toggle">
+                <label for="acco-duration" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <i class="icon-expand fas fa-angle-down"></i>
+                </label>
+
+                <div class="dropdown-title">How Long Are The Programs?</div>
+            </div>
+            <nav class="dropdown-list duration">
+                <div class="faq-answer-block">
+                    <p class="faq-answer-text">Our detox programs &nbsp;are designed to sever the physical dependency
+                        aspects of addiction in the fastest, safest, and most comfortable means possible. This process usually
+                        ranges between 7 to 10 days, but this may differ depending on the individual needs of each client. The
+                        duration of our treatment programs is generally between 30 and 90 days but may also vary.
+                    </p>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+<section class="inssurance-section"></section>
+<section class="call-section">
+    <div class="container">
+        <div class="call-buttons-container">
+            <div class="call-content-box">
+                <h3 class="call-heading">When can I start?</h3>
+                <div class="footer-text">
+                    Today. One of our Treatment Specialists will tend to your needs and verify your insurance/financial
+                    information, as well as guide you through the process of selecting the appropriate treatment center most
+                    suitable for you.
+                </div>
+                <h4 class="call-subheading">
+                    Take the first step!
+                </h4>
+            </div>
+            <div class="call-content-box button">
+                <a href="tel:+19543798066" class="cta-button">Call us now!</a>
+            </div>
+        </div>
+    </div>
+    <amp-lightbox id="modal"  layout="nodisplay">
+        <div class="pop_up-section">
+            <div class="pop_up-bg" data-ix="popup-close">
+            </div>
+            <div class="pop_up-holder">
+                <div class="first_step-bg">
+                    <h4 class="pop_up-heading">
+                        Take the First Step
+                    </h4>
+                    <div class="pop_up-close"
+                         on="tap:modal.close"
+                         role="button"
+                         tabindex="0" data-ix="popup-close">×</div>
+                    <div class="pop_up-list">
+                        <div class="pop_up_list-item">
+                            <div class="list_text">Speak to a Treatment Specialist</div>
+                        </div>
+                        <div class="pop_up_list-item">
+                            <div class="list_text">
+                                Verify your Insurance
+                            </div>
+                        </div>
+                        <div class="pop_up_list-item">
+                            <div class="list_text">
+                                Get Information about our Locations, Programs, and Treatment options
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pop_up-one">
+                    <div class="call-content-box button">
+                        <a href="tel:+19543798066" class="a-button">
+                            <i class="fas fa-phone"></i>(954)379-066</a>
+                    </div>
+                </div>
+                <div class="pop_up_or-section">
+                    <div class="pop_up-line"></div>
+                    <div class="pop_up-circle">
+                        <div class="pop_up_or-text">or</div>
+                    </div>
+                </div>
+                <div class="pop_up-two">
+                    <div class="pop_up-form_block w-form">
+                        <div id="email-form"  data-name="Email Form" class="pop_up-form">
+                            <input type="text" class="pop_up_text-field w-input" maxlength="256" name="full_name"
+                                   data-name="full_name" placeholder="Full Name" id="full_name" required="">
+                            <input type="email" class="pop_up_text-field w-input" maxlength="256" name="email" data-name="email"
+                                   placeholder="Email" id="email-2" required="">
+                            <input type="text" class="pop_up_text-field w-input" maxlength="256" name="phone" data-name="phone"
+                                   placeholder="Phone" id="phone-2" required="">
+                            <input type="submit" value="Request a Call From Us" data-wait="Please wait..."
+                                   class="pop_up-btn form_btn w-button">
+                        </div>
+                    </div>
+                    <p class="pop_up_two-text"><span class="text-span-14"></span><span class="text-span-14"><span
+                            class="text-span-15"></span>&nbsp;</span>We value privacy. All information shared with us is 100%
+                        confidential.</p></div>
+            </div><a href="#" class="mobile_banner-section w-inline-block">
+            <div class="mobile_banner-left">
+                <div class="mobile_banner-heading">Start your path to recovery today!</div>
+                <div class="mobile_banner-text">Call now for 24/7 confidential help.</div>
+            </div>
+            <div class="mobile_banner-right">
+                <div class="mobile_banner-phone"></div>
+            </div>
+        </a>
+            <div class="progress_bar">
+                <div class="progress_line"></div>
+            </div>
+        </div>
+    </amp-lightbox>
+
+</section>
+</body>
+</html>
